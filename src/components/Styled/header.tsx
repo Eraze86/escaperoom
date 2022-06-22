@@ -12,7 +12,7 @@ height: 10rem;
 `
 
 export const ImgHeader = styled.img`
-height: 15rem;
+height: 12rem;
 width: 100vw;
 object-fit: cover;
 position: relative;

@@ -4,9 +4,11 @@ import { ImgPaper } from "./Styled/img";
 import { Section } from "./Styled/section";
 export function Home(){
 
+
+  
     return(<>
 <Section >
-{/* style={{ backgroundImage:`url(${paper})` }} */}
+
 <ImgPaper src={ paper } alt="burn old paper"/>
 <DivWelcome>
 
