@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler, useState } from "react";
+import { ChangeEvent, ChangeEventHandler, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { ImgHeader, StyledHeader } from "../components/Styled/header";
 import sfinx from "../img/sfinx.jpeg"
@@ -8,6 +8,14 @@ import { StyledForm } from "./Styled/form";
 import { useNavigate } from "react-router-dom";
 
 export function Layout(){
+    useEffect(()=>{
+        let getUser = localStorage.getItem("user")
+     if(getUser=== "1"){
+        setStartHeader(false)
+        setChangeHeader(true)
+      }console.error("error")
+      },[])
+
 
 const nav = useNavigate();
 const [user, setUser] = useState<IUsers>({
@@ -26,7 +34,8 @@ function loggIn(){
 if(user.userName === "admin" && user.passWord === "admin"){
     setStartHeader(false)
     setChangeHeader(true)
-    nav("/wordpuzzle");
+    localStorage.setItem("user", "1")
+    
 }
 }
 

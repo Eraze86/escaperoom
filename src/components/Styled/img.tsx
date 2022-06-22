@@ -14,3 +14,4 @@ background-color: white;
 border: 1px solid black;
 
 `
+export const ImgPyramid = styled.img``

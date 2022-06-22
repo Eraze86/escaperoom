@@ -48,6 +48,8 @@ export function WordPuzzle(){
     <ImgHier src={ E } alt="hieroglyphics"/>
     <ImgHier src={ T } alt="hieroglyphics"/>
     <ImgHier src={ VW } alt="hieroglyphics"/>
+
+    <a href="/wordpuzzle">Ord Pussel</a><a href="/pyramidpuzzle">Pyramid Pussel</a>
     </Div>
 
 
