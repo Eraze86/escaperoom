@@ -4,7 +4,9 @@ export function Home(){
 
 
     return(<>
-  works
-    
+ <div>
+  Welcome!
+  We have been waiting for you to arrive. 
+ </div>
     </>)
 }
