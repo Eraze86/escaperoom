@@ -14,4 +14,15 @@ background-color: white;
 border: 1px solid black;
 
 `
-export const ImgPyramid = styled.img``
+export const ImgPyramid = styled.img`
+height: 28rem;
+
+
+`
+export const ImgPGame = styled.img`
+position: absolute;
+top: 0rem;
+
+
+
+`

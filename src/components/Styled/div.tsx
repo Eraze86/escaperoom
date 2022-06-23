@@ -21,3 +21,10 @@ export const DivPuzzleOne= styled.div`
 margin: 4rem 2rem 2rem 2rem ;
 background-color: white;
 `
+
+export const DivPyramid= styled.div`
+width: 100vw;
+display: flex;
+justify-content: center;
+
+`

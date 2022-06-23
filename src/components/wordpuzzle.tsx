@@ -40,16 +40,16 @@ export function WordPuzzle(){
     <ImgHier src={ L } alt="hieroglyphics"/>
     <ImgHier src={ O } alt="hieroglyphics"/>
     <ImgHier src={ O } alt="hieroglyphics"/>
-    <ImgHier src={ KX } alt="hieroglyphics"/>
+    <ImgHier src={ KX } alt="hieroglyphics"/><br/>
     <ImgHier src={ B } alt="hieroglyphics"/>
     <ImgHier src={ E } alt="hieroglyphics"/>
     <ImgHier src={ H } alt="hieroglyphics"/>
     <ImgHier src={ I } alt="hieroglyphics"/>
     <ImgHier src={ N } alt="hieroglyphics"/>
-    <ImgHier src={ D } alt="hieroglyphics"/>
+    <ImgHier src={ D } alt="hieroglyphics"/><br/>
     <ImgHier src={ T } alt="hieroglyphics"/>
     <ImgHier src={ H } alt="hieroglyphics"/>
-    <ImgHier src={ E } alt="hieroglyphics"/>
+    <ImgHier src={ E } alt="hieroglyphics"/><br/>
     <ImgHier src={ T } alt="hieroglyphics"/>
     <ImgHier src={ VW } alt="hieroglyphics"/>
 <br/>
