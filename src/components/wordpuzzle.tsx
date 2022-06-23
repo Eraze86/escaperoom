@@ -8,7 +8,7 @@ import G from "../img/puzzle1/G.jpg"
 import H from "../img/puzzle1/H.jpg"
 import I from "../img/puzzle1/I.jpg"
 import J from "../img/puzzle1/J.jpg"
-import K from "../img/puzzle1/K.jpg"
+import KX from "../img/puzzle1/KX.jpg"
 import L from "../img/puzzle1/L.jpg"
 import M from "../img/puzzle1/M.jpg"
 import N from "../img/puzzle1/N.jpg"
@@ -23,20 +23,24 @@ import VW from "../img/puzzle1/VW.jpg"
 import X from "../img/puzzle1/X.jpg"
 import Y from "../img/puzzle1/Y.jpg"
 import Z from "../img/puzzle1/Z.jpg"
-import { Div } from "./Styled/div"
+import { DivPuzzleOne } from "./Styled/div"
 import { ImgHier } from "./Styled/img"
+import { Section } from "./Styled/section"
 
 
 export function WordPuzzle(){
-
+//to ides:
+// one: is that user can move pictures, in to an container. if all of the pictures is in the right container u will get a clue
+// two: is that user can move picture,in to an container. we some pictures allready are. it will become a word that is a other clue
 
   
     return(<>
-    <Div>
+    <Section>
+    <DivPuzzleOne>
     <ImgHier src={ L } alt="hieroglyphics"/>
     <ImgHier src={ O } alt="hieroglyphics"/>
     <ImgHier src={ O } alt="hieroglyphics"/>
-    <ImgHier src={ K } alt="hieroglyphics"/>
+    <ImgHier src={ KX } alt="hieroglyphics"/>
     <ImgHier src={ B } alt="hieroglyphics"/>
     <ImgHier src={ E } alt="hieroglyphics"/>
     <ImgHier src={ H } alt="hieroglyphics"/>
@@ -48,13 +52,14 @@ export function WordPuzzle(){
     <ImgHier src={ E } alt="hieroglyphics"/>
     <ImgHier src={ T } alt="hieroglyphics"/>
     <ImgHier src={ VW } alt="hieroglyphics"/>
-
-    <a href="/wordpuzzle">Ord Pussel</a><a href="/pyramidpuzzle">Pyramid Pussel</a>
-    </Div>
-
-
+<br/>
+    </DivPuzzleOne>
+    <a href="/">Startpage</a><br/>
+    <a href="/pyramidpuzzle">Pyramid Puzzle</a>
+    </Section>
 
     Look behind the Tv
+ 
     </>)
 
 }

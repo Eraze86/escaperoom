@@ -7,6 +7,7 @@ import { NoPage } from './components/nopage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout';
 import { WordPuzzle } from './components/wordpuzzle';
+import { PyramidPuzzle } from './components/Pyramidpuzzle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +20,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="*" element={<NoPage />} />
           <Route path="/wordpuzzle" element={<WordPuzzle />} />
+          <Route path="/pyramidpuzzle" element={<PyramidPuzzle/>} />
           </Route>
     </Routes>
     </BrowserRouter>

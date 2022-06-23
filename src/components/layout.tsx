@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { ImgHeader, StyledHeader } from "../components/Styled/header";
 import sfinx from "../img/sfinx.jpeg"
@@ -13,7 +13,7 @@ export function Layout(){
      if(getUser=== "1"){
         setStartHeader(false)
         setChangeHeader(true)
-      }console.error("error")
+      }
       },[])
 
 
@@ -32,6 +32,7 @@ function handleUser(e: ChangeEvent<HTMLInputElement>){
 }
 function loggIn(){
 if(user.userName === "admin" && user.passWord === "admin"){
+    window.location.reload();
     setStartHeader(false)
     setChangeHeader(true)
     localStorage.setItem("user", "1")
@@ -42,18 +43,22 @@ if(user.userName === "admin" && user.passWord === "admin"){
 
 
     return(<>
-    {startHeader && <StyledHeader>
+    {startHeader && 
+    <StyledHeader>
     <ImgHeader src={ sfinx} alt="sfinx"/>
     <StyledForm>
     <input type="text" name="userName" value={user.userName} onChange={handleUser}/>
     <input type="text" name="passWord"value={user.passWord} onChange={handleUser}/>
     <Button onClick={loggIn}>Logga in</Button>
     </StyledForm>
+   
     </StyledHeader>}
-    {changeHeader && <StyledHeader>
+
+    {changeHeader && 
+    <StyledHeader>
     <ImgHeader src={ sfinx} alt="sfinx"/>
     <StyledForm>
-    <p>Welcome </p>
+    <p>Escape room <br/>The mystery of the hidden tombs</p>
     </StyledForm>
     </StyledHeader> }
     <Outlet></Outlet>
