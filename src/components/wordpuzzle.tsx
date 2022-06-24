@@ -55,7 +55,8 @@ export function WordPuzzle(){
 <br/>
     </DivPuzzleOne>
     <a href="/">Startpage</a><br/>
-    <a href="/pyramidpuzzle">Pyramid Puzzle</a>
+    <a href="/pyramidpuzzle">Pyramid Puzzle</a><br/>
+    <a href="/stargaze">Stars</a>
     </Section>
 
     Look behind the Tv

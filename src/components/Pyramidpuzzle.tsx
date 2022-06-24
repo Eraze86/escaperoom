@@ -16,8 +16,10 @@ export function PyramidPuzzle(){
         <ImgPyramid src={ pyramid } alt="Pyramid"/>
         <ImgPGame src={ pyramidP } alt="Pyramidpuzzle"/><br/>
      </DivPyramid>
-     <a href="/">Startpage</a><br/>
-    <a href="/wordpuzzle">Word Puzzle</a>
+ 
+    <a href="/">Startpage</a><br/>
+    <a href="/wordpuzzle">Word Puzzle</a><br/>
+    <a href="/stargaze">Stars</a>
 
     </Section>
     </>)

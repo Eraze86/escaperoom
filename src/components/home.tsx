@@ -43,7 +43,8 @@ export function Home(){
  Good luck!
 <br/>
 <a href="/wordpuzzle">Word Puzzle</a><br/>
-<a href="/pyramidpuzzle">Pyramid Puzzle</a>
+<a href="/pyramidpuzzle">Pyramid Puzzle</a><br/>
+<a href="/stargaze">Stars</a>
  </Div>
  </>}
 </Section>

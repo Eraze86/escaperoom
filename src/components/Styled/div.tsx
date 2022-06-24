@@ -28,3 +28,11 @@ display: flex;
 justify-content: center;
 
 `
+export const DivStarpage= styled.div`
+// background: rgb(0,12,64);
+// background: linear-gradient(0deg, rgba(0,12,64,1) 37%, rgba(0,0,0,1) 100%);
+// padding: 2rem 0rem
+
+
+`
+
