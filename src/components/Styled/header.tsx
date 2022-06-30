@@ -1,24 +1,35 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
 position: static;
 color: white;
 width: 100vw;
-height: 10rem;
+margin: 1rem;
+text-align: center;
+height: 10rem; 
 
 @media (min-width: 768px) {
-    height: 20rem;
+   
     }
 `
 
-export const ImgHeader = styled.img`
-height: 12rem;
-width: 100vw;
-object-fit: cover;
-position: relative;
-z-index: -2;
+export const Nav = styled.nav`
+
+color: white;
 
 
 @media (min-width: 768px) {
-    height: 25rem;
-    }`
+  
+    }
+`
+
+export const Links= styled(Link)`
+
+color: white;
+margin: 1rem;
+
+@media (min-width: 768px) {
+  
+    }
+`

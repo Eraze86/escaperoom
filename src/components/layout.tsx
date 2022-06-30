@@ -1,6 +1,6 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { ImgHeader, StyledHeader } from "../components/Styled/header";
+import { Links, Nav, StyledHeader } from "../components/Styled/header";
 import sfinx from "../img/sfinx.jpeg"
 import { IUsers } from "../interface/IUsers";
 import { Button } from "./Styled/button";
@@ -8,42 +8,46 @@ import { StyledForm } from "./Styled/form";
 import { useNavigate } from "react-router-dom";
 
 export function Layout(){
-    useEffect(()=>{
-        let getUser = localStorage.getItem("user")
-     if(getUser=== "1"){
-        setStartHeader(false)
-        setChangeHeader(true)
-      }
-      },[])
+//     useEffect(()=>{
+//         let getUser = localStorage.getItem("user")
+//      if(getUser=== "1"){
+//         setStartHeader(false)
+//         setChangeHeader(true)
+//       }
+//       },[])
 
 
-const nav = useNavigate();
-const [user, setUser] = useState<IUsers>({
-    userName: "",
-    passWord: "",
-})
-const [startHeader, setStartHeader] = useState(true)
-const [changeHeader, setChangeHeader] = useState(false)
+// const nav = useNavigate();
+// const [user, setUser] = useState<IUsers>({
+//     userName: "",
+//     passWord: "",
+// })
+// const [startHeader, setStartHeader] = useState(true)
+// const [changeHeader, setChangeHeader] = useState(false)
 
-function handleUser(e: ChangeEvent<HTMLInputElement>){
-    let name = e.target.name
-    let uppdate = ({...user, [name]: e.target.value})
-    setUser(uppdate)
-}
-function loggIn(){
-if(user.userName === "admin" && user.passWord === "admin"){
-    window.location.reload();
-    setStartHeader(false)
-    setChangeHeader(true)
-    localStorage.setItem("user", "1")
-    
-}
-}
-
-
+// function handleUser(e: ChangeEvent<HTMLInputElement>){
+//     let name = e.target.name
+//     let uppdate = ({...user, [name]: e.target.value})
+//     setUser(uppdate)
+// }
+// function loggIn(){
+// if(user.userName === "Carsson" && user.passWord === "woohoo"){
+//     window.location.reload();
+//     setStartHeader(false)
+//     setChangeHeader(true)
+//     localStorage.setItem("user", "1")
+// }
+// console.log("wrong password")
+// }
 
     return(<>
-    {startHeader && 
+<Nav>
+    <Links to="/">Startpage</Links>
+    <Links to="/">Contact creater</Links>
+</Nav>
+    <StyledHeader>Welcome to this escape room online!
+    Choose picture to select a room. </StyledHeader>
+    {/* {startHeader && 
     <StyledHeader>
     <ImgHeader src={ sfinx} alt="sfinx"/>
     <StyledForm>
@@ -60,7 +64,7 @@ if(user.userName === "admin" && user.passWord === "admin"){
     <StyledForm>
     <p>Escape room <br/>The mystery of the hidden tombs</p>
     </StyledForm>
-    </StyledHeader> }
+    </StyledHeader> } */}
     <Outlet></Outlet>
    
     </>)
