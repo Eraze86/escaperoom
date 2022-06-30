@@ -1,8 +1,11 @@
-import {  Section, SectionStart } from "./Styled/section";
+import {   SectionStart } from "./Styled/section";
 import oldRoom from "../img/room1.jpg"
+import apartment from "../img/room2.png"
+import flowerRoom from "../img/room3.jpg"
 import { Article } from "./Styled/article";
 import { ImgRooms } from "./Styled/img";
-import { Link } from "react-router-dom";
+
+import { LinkRoom } from "./Styled/links";
 export function Home(){
 
 function goToPicture(){
@@ -13,12 +16,12 @@ function goToPicture(){
 
    <SectionStart>
       <Article>
-        <Link to="/"><ImgRooms src={ oldRoom } onClick={goToPicture} /></Link>
+        <LinkRoom to="/room1"><ImgRooms src={ oldRoom }  /></LinkRoom>
       </Article>
       <Article>
-      <Link to="/"><ImgRooms src={ oldRoom } onClick={goToPicture} /></Link>
+      <LinkRoom to="/room2"><ImgRooms src={ apartment} /></LinkRoom>
       </Article>  <Article>
-      <Link to="/"><ImgRooms src={ oldRoom } onClick={goToPicture} /></Link>
+      <LinkRoom to="/room3"><ImgRooms src={ flowerRoom }  /></LinkRoom>
       </Article>
     </SectionStart>
     </>)

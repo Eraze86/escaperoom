@@ -24,7 +24,6 @@ import X from "../img/puzzle1/X.jpg"
 import Y from "../img/puzzle1/Y.jpg"
 import Z from "../img/puzzle1/Z.jpg"
 import { DivPuzzleOne } from "./Styled/div"
-import { ImgHier } from "./Styled/img"
 import { Section } from "./Styled/section"
 
 
@@ -37,21 +36,8 @@ export function WordPuzzle(){
     return(<>
     <Section>
     <DivPuzzleOne>
-    <ImgHier src={ L } alt="hieroglyphics"/>
-    <ImgHier src={ O } alt="hieroglyphics"/>
-    <ImgHier src={ O } alt="hieroglyphics"/>
-    <ImgHier src={ KX } alt="hieroglyphics"/><br/>
-    <ImgHier src={ B } alt="hieroglyphics"/>
-    <ImgHier src={ E } alt="hieroglyphics"/>
-    <ImgHier src={ H } alt="hieroglyphics"/>
-    <ImgHier src={ I } alt="hieroglyphics"/>
-    <ImgHier src={ N } alt="hieroglyphics"/>
-    <ImgHier src={ D } alt="hieroglyphics"/><br/>
-    <ImgHier src={ T } alt="hieroglyphics"/>
-    <ImgHier src={ H } alt="hieroglyphics"/>
-    <ImgHier src={ E } alt="hieroglyphics"/><br/>
-    <ImgHier src={ T } alt="hieroglyphics"/>
-    <ImgHier src={ VW } alt="hieroglyphics"/>
+
+
 <br/>
     </DivPuzzleOne>
     <a href="/">Startpage</a><br/>

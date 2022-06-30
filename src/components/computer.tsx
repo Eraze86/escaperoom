@@ -1,6 +1,4 @@
 import { Div } from "./Styled/div";
-import paper from "../img/paper.png"
-import { ImgPaper } from "./Styled/img";
 import { Section, SectionStart } from "./Styled/section";
 import { useEffect, useState } from "react";
 export function Home(){
@@ -33,7 +31,7 @@ export function Home(){
   
  </SectionStart></>}
  {loggedIn && <>
-  <ImgPaper src={ paper } alt="burn old paper"/>
+
   <Div>
  There you are, its about time. We found many puzzles when we where exploring the pyramids. Maybe you can solve some of them?
  God knows we have tried!

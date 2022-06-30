@@ -1,11 +1,12 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Links, Nav, StyledHeader } from "../components/Styled/header";
+import { Nav, StyledHeader } from "../components/Styled/header";
 import sfinx from "../img/sfinx.jpeg"
 import { IUsers } from "../interface/IUsers";
 import { Button } from "./Styled/button";
 import { StyledForm } from "./Styled/form";
 import { useNavigate } from "react-router-dom";
+import { Links } from "./Styled/links";
 
 export function Layout(){
 //     useEffect(()=>{
@@ -45,7 +46,7 @@ export function Layout(){
     <Links to="/">Startpage</Links>
     <Links to="/">Contact creater</Links>
 </Nav>
-    <StyledHeader>Welcome to this escape room online!
+    <StyledHeader>Welcome to Escape room online!
     Choose picture to select a room. </StyledHeader>
     {/* {startHeader && 
     <StyledHeader>
