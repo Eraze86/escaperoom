@@ -9,22 +9,12 @@ margin: 12% 8%;
 padding: 0rem 3rem;
 font-size: 0.8rem;
 `
-export const DivPuzzleOne= styled.div`
-margin: 4rem 2rem 2rem 2rem ;
-background-color: white;
+
+export const R1T1= styled.div`
+position: absolute;
+top: 41rem;
+left: 21rem;
+width: 2rem;
+height: 2rem;
+background-color: red;
 `
-
-export const DivPyramid= styled.div`
-width: 100vw;
-display: flex;
-justify-content: center;
-
-`
-export const DivStarpage= styled.div`
-// background: rgb(0,12,64);
-// background: linear-gradient(0deg, rgba(0,12,64,1) 37%, rgba(0,0,0,1) 100%);
-// padding: 2rem 0rem
-
-
-`
-

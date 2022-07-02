@@ -23,7 +23,7 @@ import VW from "../img/puzzle1/VW.jpg"
 import X from "../img/puzzle1/X.jpg"
 import Y from "../img/puzzle1/Y.jpg"
 import Z from "../img/puzzle1/Z.jpg"
-import { DivPuzzleOne } from "./Styled/div"
+
 import { Section } from "./Styled/section"
 
 
@@ -35,11 +35,11 @@ export function WordPuzzle(){
   
     return(<>
     <Section>
-    <DivPuzzleOne>
+   
 
 
 <br/>
-    </DivPuzzleOne>
+  
     <a href="/">Startpage</a><br/>
     <a href="/pyramidpuzzle">Pyramid Puzzle</a><br/>
     <a href="/stargaze">Stars</a>
